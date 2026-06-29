@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .env
 k8s/mysql-secret.yaml
+backups/
