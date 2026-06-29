@@ -2,8 +2,9 @@ from flask import Flask, request, jsonify, redirect
 import random
 import string
 import db
-
+from prometheus_flask_exporter import PrometheusMetrics
 app = Flask(__name__)
+metrics = PrometheusMetrics(app)
 
 
 def generate_code(length=6):
